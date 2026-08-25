@@ -86,7 +86,7 @@ export function Nav() {
             className="absolute inset-x-0 top-full flex flex-col gap-1 border-b border-border bg-background/95 px-6 py-4 backdrop-blur-md sm:hidden"
           >
             {links.map((l) => (
-              
+              <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
