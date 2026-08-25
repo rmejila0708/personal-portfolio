@@ -160,6 +160,40 @@ export const websiteSamples: WebsiteSample[] = [
   },
 ];
 
+export type GraphicSample = {
+  title: string;
+  tag: string;
+  image: string;
+};
+
+export type GraphicGroup = {
+  client: string;
+  samples: GraphicSample[];
+};
+
+export const graphicGroups: GraphicGroup[] = [
+  {
+    client: "Golden Pineapple Group",
+    samples: [
+      {
+        title: "Brochure — 94-1211 Heahea St",
+        tag: "Listing Brochure",
+        image: "/work/heahea-brochure.jpg",
+      },
+      {
+        title: "Fact Sheet — 94-1211 Heahea St",
+        tag: "Fact Sheet",
+        image: "/work/heahea-fact-sheet.jpg",
+      },
+      {
+        title: "Flyer — 94-1211 Heahea St",
+        tag: "Open House Flyer",
+        image: "/work/heahea-flyer.jpg",
+      },
+    ],
+  },
+];
+
 export type BlogSample = {
   title: string;
   excerpt: string;

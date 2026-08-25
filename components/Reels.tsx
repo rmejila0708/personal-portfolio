@@ -10,22 +10,20 @@ function ReelCard({
   title,
   src,
   poster,
-  aspect = "9/16",
 }: {
   title: string;
   src: string;
   poster: string;
-  aspect?: "9/16" | "16/9";
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
 
   return (
-    <motion.div whileHover={{ y: -6 }} className="card-border overflow-hidden rounded-2xl">
-      <div
-        className="relative w-full overflow-hidden bg-black"
-        style={{ aspectRatio: aspect.replace("/", " / ") }}
-      >
+    <motion.div
+      whileHover={{ y: -6 }}
+      className="card-border flex h-full flex-col overflow-hidden rounded-2xl"
+    >
+      <div className="relative aspect-[3/4] w-full overflow-hidden bg-black">
         <video
           ref={videoRef}
           src={assetPath(src)}

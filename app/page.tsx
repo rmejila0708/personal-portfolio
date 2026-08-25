@@ -3,6 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Expertise } from "@/components/Expertise";
 import { Work } from "@/components/Work";
+import { GraphicDesign } from "@/components/GraphicDesign";
 import { Websites } from "@/components/Websites";
 import { Reels } from "@/components/Reels";
 import { Workflow } from "@/components/Workflow";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Expertise />
         <Work />
+        <GraphicDesign />
         <Websites />
         <Reels />
         <Workflow />
