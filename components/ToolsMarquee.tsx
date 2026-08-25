@@ -11,34 +11,43 @@ import {
   SiDavinciresolve,
 } from "react-icons/si";
 
-type Tool = { name: string; Icon?: IconType };
+type Tool = { name: string; Icon?: IconType; color?: string };
 
+// react-icons/si (Simple Icons) doesn't ship marks for these brands
+// (Adobe's suite, Canva, OpenAI/ChatGPT, Monday.com, GoHighLevel aren't
+// in the package). Rather than a generic gray placeholder, each gets its
+// real brand color behind the initials so it reads as intentional.
 const row1: Tool[] = [
   { name: "Claude Code", Icon: SiClaudecode },
-  { name: "ChatGPT" },
+  { name: "ChatGPT", color: "#10A37F" },
   { name: "Anthropic", Icon: SiAnthropic },
   { name: "HubSpot", Icon: SiHubspot },
-  { name: "GoHighLevel" },
+  { name: "GoHighLevel", color: "#FB2E01" },
   { name: "Zapier", Icon: SiZapier },
-  { name: "Monday.com" },
+  { name: "Monday.com", color: "#FF3D57" },
 ];
 
 const row2: Tool[] = [
   { name: "WordPress", Icon: SiWordpress },
   { name: "ClickUp", Icon: SiClickup },
   { name: "DaVinci Resolve", Icon: SiDavinciresolve },
-  { name: "Adobe Premiere Pro" },
-  { name: "After Effects" },
-  { name: "Photoshop" },
-  { name: "Illustrator" },
-  { name: "Canva" },
+  { name: "Adobe Premiere Pro", color: "#9999FF" },
+  { name: "After Effects", color: "#9999FF" },
+  { name: "Photoshop", color: "#31A8FF" },
+  { name: "Illustrator", color: "#FF9A00" },
+  { name: "Canva", color: "#00C4CC" },
 ];
 
 function Tile({ tool }: { tool: Tool }) {
-  const { name, Icon } = tool;
+  const { name, Icon, color } = tool;
   return (
     <div className="group flex shrink-0 items-center gap-3 rounded-2xl border border-border bg-white/[0.03] px-5 py-4 transition-colors hover:border-accent/40 hover:bg-white/[0.06]">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/5 text-foreground/80 transition-colors group-hover:text-accent-2">
+      <span
+        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl transition-colors group-hover:text-accent-2 ${
+          !Icon && color ? "" : "bg-white/5 text-foreground/80"
+        }`}
+        style={!Icon && color ? { backgroundColor: `${color}26`, color } : undefined}
+      >
         {Icon ? (
           <Icon size={18} />
         ) : (
