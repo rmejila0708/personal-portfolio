@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 export function HeroPortrait() {
   return (
@@ -12,7 +13,7 @@ export function HeroPortrait() {
       }}
     >
       <Image
-        src="/profile/ricky-laptop-cutout.png"
+        src={assetPath("/profile/ricky-laptop-cutout.png")}
         alt="Ricky Mejila working on a laptop"
         fill
         priority

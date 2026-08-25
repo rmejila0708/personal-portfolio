@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { videoGroups } from "@/lib/data";
+import { assetPath } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 
 function ReelCard({
@@ -27,8 +28,8 @@ function ReelCard({
       >
         <video
           ref={videoRef}
-          src={src}
-          poster={poster}
+          src={assetPath(src)}
+          poster={assetPath(poster)}
           controls={playing}
           playsInline
           preload="none"

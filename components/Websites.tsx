@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { websiteSamples } from "@/lib/data";
+import { assetPath } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 
 export function Websites() {
@@ -40,7 +41,7 @@ export function Websites() {
 
               <div
                 className="site-scroll h-[420px] w-full"
-                style={{ backgroundImage: `url(${site.image})` }}
+                style={{ backgroundImage: `url(${assetPath(site.image)})` }}
               />
 
               <div className="flex items-center justify-between px-5 py-4">

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { blogSamples, socialGroups } from "@/lib/data";
+import { assetPath } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 
 export function Work() {
@@ -81,7 +82,7 @@ export function Work() {
               {group.samples.map((s, i) => (
                 <Reveal key={s.image} delay={i * 0.05}>
                   <motion.a
-                    href={s.image}
+                    href={assetPath(s.image)}
                     target="_blank"
                     rel="noreferrer"
                     whileHover={{ y: -4 }}
@@ -89,7 +90,7 @@ export function Work() {
                   >
                     <div className="relative aspect-square overflow-hidden">
                       <Image
-                        src={s.image}
+                        src={assetPath(s.image)}
                         alt={s.caption}
                         fill
                         sizes="(max-width: 640px) 50vw, 33vw"
