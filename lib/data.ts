@@ -253,6 +253,11 @@ export const videoGroups: VideoGroup[] = [
         src: "/videos/eproject-ad-2.mp4",
         poster: "/videos/eproject-ad-2-poster.jpg",
       },
+      {
+        title: "Carousel Ad — Real Estate Support Simplified",
+        src: "/videos/eproject-carousel-ad.mp4",
+        poster: "/videos/eproject-carousel-ad-poster.jpg",
+      },
     ],
   },
   {
