@@ -265,6 +265,33 @@ export const videoGroups: VideoGroup[] = [
         src: "/videos/walking-the-dog.mp4",
         poster: "/videos/walking-the-dog-poster.jpg",
       },
+      {
+        title: "Revi MCP Ad: The Roommate",
+        src: "/videos/revi-mcp-ad-roommate.mp4",
+        poster: "/videos/revi-mcp-ad-roommate-poster.jpg",
+      },
+      {
+        title: "Revi MCP Interview Ad",
+        src: "/videos/revi-interview-ad.mp4",
+        poster: "/videos/revi-interview-ad-poster.jpg",
+      },
+      {
+        title: "Convention Interview",
+        src: "/videos/revi-convention-interview.mp4",
+        poster: "/videos/revi-convention-interview-poster.jpg",
+      },
+      {
+        title: "Revi MCP Ad",
+        src: "/videos/revi-mcp-ad.mp4",
+        poster: "/videos/revi-mcp-ad-poster.jpg",
+        aspect: "16/9",
+      },
+      {
+        title: "Dev Lunch Break",
+        src: "/videos/revi-dev-lunch-break.mp4",
+        poster: "/videos/revi-dev-lunch-break-poster.jpg",
+        aspect: "16/9",
+      },
     ],
   },
   {
@@ -297,6 +324,12 @@ export const videoGroups: VideoGroup[] = [
   {
     client: "Marker Law",
     videos: [
+      {
+        title: "What Was Taken",
+        src: "/videos/marker-law-what-was-taken.mp4",
+        poster: "/videos/marker-law-what-was-taken-poster.jpg",
+        aspect: "16/9",
+      },
       {
         title: "What to Ask a WC Adjuster",
         src: "/videos/marker-law-wc-adjuster.mp4",
