@@ -222,6 +222,8 @@ export const socialGroups: SocialGroup[] = [
       { image: "/social/change-orders.jpg", caption: "Pain-point hook · Construction" },
       { image: "/social/pricing-transparency.jpg", caption: "Objection-handling · Pricing transparency" },
       { image: "/social/hvac-after-hours.jpg", caption: "Vertical campaign · HVAC after-hours" },
+      { image: "/social/revi-mcp-ad-light.jpg", caption: "Product ad · Revi MCP Bridge for WordPress (light)" },
+      { image: "/social/revi-mcp-ad-dark.jpg", caption: "Product ad · Revi MCP Bridge for WordPress (dark)" },
     ],
   },
   {
