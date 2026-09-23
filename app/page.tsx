@@ -7,6 +7,7 @@ import { GraphicDesign } from "@/components/GraphicDesign";
 import { Websites } from "@/components/Websites";
 import { Reels } from "@/components/Reels";
 import { Workflow } from "@/components/Workflow";
+import { SystemDev } from "@/components/SystemDev";
 import { Experience } from "@/components/Experience";
 import { Contact } from "@/components/Contact";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Websites />
         <Reels />
         <Workflow />
+        <SystemDev />
         <Experience />
         <Contact />
       </main>

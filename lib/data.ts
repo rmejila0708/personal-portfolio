@@ -436,3 +436,47 @@ export const blogSamples: BlogSample[] = [
     tag: "HVAC",
   },
 ];
+
+export type SystemScreen = {
+  label: string;
+  image: string;
+};
+
+export type SystemProject = {
+  name: string;
+  summary: string;
+  features: string[];
+  stack: string[];
+  screens: SystemScreen[];
+};
+
+export const systemProjects: SystemProject[] = [
+  {
+    name: "Content Management Pipeline",
+    summary:
+      "An AI content system I designed and built from scratch. A business connects its WordPress site, picks a keyword or a competitor's domain, and the system researches topics, drafts the blog post, social captions, and email newsletter, then waits for a human to approve before anything goes live.",
+    features: [
+      "Keyword and competitor research that turns into a topic queue",
+      "One-click AI drafts: blog post, social captions, and newsletter together",
+      "Human review and approval before anything publishes",
+      "Social post calendar with images and scheduling",
+      "SEO Health, Link Checker, and AI-suggested fixes ranked by Google Search Console data",
+      "Multi-site workspaces, white-label branding, and Free/Pro plans",
+    ],
+    stack: [
+      "Cloudflare Workers",
+      "D1 (SQLite)",
+      "WordPress plugin (PHP)",
+      "REST APIs",
+      "Claude & OpenAI APIs",
+      "Google Search Console API",
+      "Ahrefs / DataForSEO",
+    ],
+    screens: [
+      { label: "Your Journey", image: "/systems/cmp-journey.jpg" },
+      { label: "Topics", image: "/systems/cmp-topics.jpg" },
+      { label: "Social Calendar", image: "/systems/cmp-calendar.jpg" },
+      { label: "Settings", image: "/systems/cmp-settings.jpg" },
+    ],
+  },
+];
