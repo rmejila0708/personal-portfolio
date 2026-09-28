@@ -20,7 +20,7 @@ export const expertise = [
   {
     title: "Marketing & Social",
     blurb:
-      "Social media management, content strategy, content calendars, lead generation, email marketing, website content and design.",
+      "Social media management, Meta ads media buying, content strategy, content calendars, lead generation, email marketing, website content and design.",
   },
   {
     title: "AI & Workflow Automation",
@@ -44,6 +44,7 @@ export const tools = [
   "Canva",
   "Affinity Suite",
   "Camtasia",
+  "Meta Ads Manager",
   "ChatGPT",
   "Claude Code",
   "Zapier",
@@ -67,6 +68,7 @@ export const experience: Experience[] = [
       "Built an end-to-end system that automates blog production, social media posts, graphic generation, and SEO tasks.",
       "Connect AI tools with marketing and CRM systems to move content, leads, and information between platforms, accelerating delivery and reducing manual work.",
       "Build workflows using Monday.com, HubSpot, GoHighLevel, and Zapier for content management, lead routing, CRM organization, and automated follow-up.",
+      "Run Meta (Facebook and Instagram) ad campaigns, handling audience targeting, creative testing, budget pacing, and performance reporting.",
     ],
     clients: [
       {
@@ -107,6 +109,7 @@ export const experience: Experience[] = [
     bullets: [
       "Managed LinkedIn and Instagram content creation, planning, and scheduling.",
       "Produced promotional videos and maintained website content, including e-commerce functionality.",
+      "Planned and managed Meta (Facebook and Instagram) ad campaigns, including audience targeting, ad creative, budget management, and results tracking.",
     ],
   },
   {
@@ -477,6 +480,33 @@ export const systemProjects: SystemProject[] = [
       { label: "Topics", image: "/systems/cmp-topics.jpg" },
       { label: "Social Calendar", image: "/systems/cmp-calendar.jpg" },
       { label: "Settings", image: "/systems/cmp-settings.jpg" },
+    ],
+  },
+  {
+    name: "Media Buying OS",
+    summary:
+      "An operator app I built to run paid media with guardrails. It pulls ad and analytics data, runs the analyses a media buyer would do by hand, turns the findings into ranked recommendations, and puts every budget change through an audit and a human approval before anything touches an ad account.",
+    features: [
+      "Live Meta Ads and GA4 reads, plus CSV and Excel imports",
+      "Performance, budget pacing, tracking, creative, audience, and scaling analyses",
+      "Ranked recommendations checked by a rule-based auditor",
+      "Approvals tied to the exact change, with spend caps and cooldowns",
+      "Dry runs, sandbox simulation, verification, and rollback prep",
+      "Scheduled syncs, daily briefs, weekly reports, and alerts",
+    ],
+    stack: [
+      "Python / FastAPI",
+      "React + TypeScript",
+      "SQLite",
+      "Meta Marketing API",
+      "Google Analytics 4 API",
+      "APScheduler",
+    ],
+    screens: [
+      { label: "Performance", image: "/systems/mbos-performance.jpg" },
+      { label: "Recommendations", image: "/systems/mbos-recommendations.jpg" },
+      { label: "Budget Pacing", image: "/systems/mbos-budget.jpg" },
+      { label: "Execution History", image: "/systems/mbos-execution.jpg" },
     ],
   },
 ];
